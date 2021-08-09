@@ -33,6 +33,12 @@
 - [ ] Implement a dark mode feature
 ***
 
+### ***Screenshots***
+
+##### classic ludo game-board
+![gameboard](https://img.etimg.com/photo/msid-66600918,quality-100/ludo.jpg)
+***
+
 ### ***Credits***
 
 #### Instructions: [CoolMathGames](https://www.coolmathgames.com/0-ludo)
