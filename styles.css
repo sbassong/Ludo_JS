@@ -7,4 +7,19 @@ body {
 
 div {
   border: .5px solid red;
+  height: 100px;
+  width: 100px;
+}
+
+section {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+span {
+  border: 1px solid white;
+  height: 50px;
+  width: 50px;
+  border-radius: 25%;
 }
