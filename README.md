@@ -8,7 +8,7 @@
 ***
 
 ### ***Description***
-####  Ludo is a dice movement/strategy game derived from the Indian game *Parchisi* (other popular variation include Sorry). This gane was implemented using Javascript, HTML, CSS and deployed with Surge. This is the first project for Software Engineering Immersive at General Assembly.
+####  Ludo is a dice movement/strategy game derived from the Indian game *Parchisi* (other popular variations include Sorry!). This gane was implemented using Javascript, HTML, CSS and deployed with Surge. This is the first project for Software Engineering Immersive @ General Assembly.
 ***
 
 ### ***Technologies Used***
@@ -22,15 +22,17 @@
 
 #### 
 * Read about the game and basic rules in the Instructions panel.
-* Once ready, press the "Start" button
+* Once ready, press the "Start" button.
+* Click on the die when prompted and move your pieces accordingly
 * Enjoy yourself!
 ***
 
 ### ***Future Updates***
 
 - [ ] Implement changing colors for your base
-- [ ] Use a public API
-- [ ] Implement a dark mode feature
+- [ ] add a dark mode feature
+- [ ] Add sound effects for various actions
+- [ ] Implement a theme (board, pawns, die)
 ***
 
 ### ***Screenshots***

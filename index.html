@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet" />
+  <title>Ludo</title>
+</head>
+<body>
+  <section class ='game'>
+    <section class='game-board'>
+
+      <section class='top-board'>
+
+        <section class='green-base'>
+          <div>
+            <span id='ghc1'></span>
+            <span id='ghc2'></span>
+            <span id='ghc3'></span>
+            <span id='ghc4'></span>
+          </div>
+        </section>
+
+        <section class='top-path'>
+          <div class='cell' id='c24'></div>
+          <div class='cell' id='c25'></div>
+          <div class='cell' id='c26'></div>
+          <div class='cell' id='c23'></div>
+          <div class='cell home' id='yc1'></div>
+          <div class='cell' id='c27'></div>
+          <div class='cell' id='c22'></div>
+          <div class='cell home' id='yc2'></div>
+          <div class='cell' id='c28'></div>
+          <div class='cell' id='c21'></div>
+          <div class='cell home' id='yc3'></div>
+          <div class='cell' id='c29'></div>
+          <div class='cell' id='c20'></div>
+          <div class='cell home' id='yc4'></div>
+          <div class='cell' id='c30'></div>
+          <div class='cell' id='c19'></div>
+          <div class='cell home' id='yc5'></div>
+          <div class='cell' id='c31'></div>
+        </section>
+
+        <section class=yellow-base>
+          <div>
+            <span id='yhc1'></span>
+            <span id='yhc2'></span>
+            <span id='yhc3'></span>
+            <span id='yhc4'></span>
+          </div>
+        </section>
+      </section>
+
+      <section class='middle-board'>
+
+        <section class='left-path'>
+          <div class='cell' id='c13'></div>
+          <div class='cell' id='c14'></div>
+          <div class='cell' id='c15'></div>
+          <div class='cell' id='c16'></div>
+          <div class='cell' id='c17'></div>
+          <div class='cell' id='c18'></div>
+          <div class='cell' id='c12'></div>
+          <div class='cell home' id='gc1'></div>
+          <div class='cell home' id='gc2'></div>
+          <div class='cell home' id='gc3'></div>
+          <div class='cell home' id='gc4'></div>
+          <div class='cell home' id='gc5'></div>
+          <div class='cell' id='c11'></div>
+          <div class='cell' id='c10'></div>
+          <div class='cell' id='c9'></div>
+          <div class='cell' id='c8'></div>
+          <div class='cell' id='c7'></div>
+          <div class='cell' id='c6'></div>
+        </section>
+
+        <section class='exit'></section>
+
+        <section class='right-path'>
+          <div class='cell' id='c32'></div>
+          <div class='cell' id='c33'></div>
+          <div class='cell' id='c34'></div>
+          <div class='cell' id='c35'></div>
+          <div class='cell' id='c36'></div>
+          <div class='cell' id='c37'></div>
+          <div class='cell home' id='bc5'></div>
+          <div class='cell home' id='bc4'></div>
+          <div class='cell home' id='bc3'></div>
+          <div class='cell home' id='bc2'></div>
+          <div class='cell home' id='bc1'></div>
+          <div class='cell' id='c38'></div>
+          <div class='cell' id='c44'></div>
+          <div class='cell' id='c43'></div>
+          <div class='cell' id='c42'></div>
+          <div class='cell' id='c41'></div>
+          <div class='cell' id='c40'></div>
+          <div class='cell' id='c39'></div>
+        </section>
+      </section>
+
+      <section class='bottom-board'>
+
+        <section class='red-base'>
+          <div>
+            <span id='rhc1'></span>
+            <span id='rhc2'></span>
+            <span id='rhc3'></span>
+            <span id='rhc4'></span>
+          </div>
+        </section>
+
+        <section class='bottom-path'>
+          <div class='cell' id='c5'></div>
+          <div class='cell home' id='rc5'></div>
+          <div class='cell' id='c45'></div>
+          <div class='cell' id='c4'></div>
+          <div class='cell home' id='rc4'></div>
+          <div class='cell' id='c46'></div>
+          <div class='cell' id='c3'></div>
+          <div class='cell home' id='rc3'></div>
+          <div class='cell' id='c47'></div>
+          <div class='cell' id='c2'></div>
+          <div class='cell home' id='rc2'></div>
+          <div class='cell' id='c48'></div>
+          <div class='cell' id='c1'></div>
+          <div class='cell home' id='rc1'></div>
+          <div class='cell' id='c49'></div>
+          <div class='cell' id='c52'></div>
+          <div class='cell' id='c51'></div>
+          <div class='cell' id='c50'></div>
+        </section>
+
+        <section class=blue-base>
+          <div>
+            <span id='bhc1'></span>
+            <span id='bhc2'></span>
+            <span id='bhc3'></span>
+            <span id='bhc4'></span>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section class='instructions menu'></section>
+  </section>
+  
+  <script src='script.js' type='javascript'></script>
+</body>
+</html>
+
+<!-- keys/legend -->
+<!-- c = cell        safe cell            home cells  -->
+<!-- r = red      rc = red cell         rhc = red home cell -->
+<!-- g = green    gc = green cell       ghc = green home cell -->
+<!-- y = yellow   yc = yellow cell      yhc = yellow home cell -->
+<!-- b = blue     bc = blue cell        bhc = blue home cell -->
