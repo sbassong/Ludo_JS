@@ -1,25 +1,85 @@
 body {
   background-color: rgb(202, 164, 236);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 10px;
+}
+
+.game {
+  box-sizing: border-box;
 }
 
 div {
-  border: .5px solid red;
-  height: 100px;
-  width: 100px;
+  border: 1px solid red;
+  height: 30px;
+  width: 30px;
+
 }
 
+/* section */
 section {
   border: 1px solid black;
   display: flex;
-  flex-wrap: wrap;
 }
 
+.game-board {
+  display: inline-block;
+  box-sizing: inherit;
+}
+
+.bottom-board,
+.top-board,
+.middle-board {
+  height: 300px;
+  width: 600px;
+  display: flex;
+}
+
+.red-base,
+.blue-base,
+.green-base,
+.yellow-base {
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  /* padding: 20px; */
+}
+
+#red-home,
+#blue-home,
+#green-home,
+#yellow-home {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+
+.bottom-path,
+.top-path {
+  display: grid;
+  flex-direction: row;
+  grid-template: repeat(6, 1fr) / repeat(3, 1fr);
+}
+
+.left-path,
+.right-path {
+  display: grid;
+  flex-direction: row;
+  grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+}
+
+
+
+
+
+
 span {
-  border: 1px solid white;
-  height: 50px;
-  width: 50px;
-  border-radius: 25%;
+  background: white;
+  display: inline-block;
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin: 20px;
 }
